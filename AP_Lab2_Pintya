@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Примітивні типи даних");
+
+        System.out.println("Byte: Розмір: " + Byte.BYTES + " байт  Мін: " + Byte.MIN_VALUE + "  Макс: " + Byte.MAX_VALUE);
+        System.out.println("Short: Розмір: " + Short.BYTES + " байт  Мін: " + Short.MIN_VALUE + "  Макс: " + Short.MAX_VALUE);
+        System.out.println("Integer: Розмір: " + Integer.BYTES + " байт  Мін: " + Integer.MIN_VALUE + "  Макс: " + Integer.MAX_VALUE);
+        System.out.println("Long: Розмір: " + Long.BYTES + " байт  Мін: " + Long.MIN_VALUE + "  Макс: " + Long.MAX_VALUE);
+        System.out.println("Float: Розмір: " + Float.BYTES + " байт  Мін: " + Float.MIN_VALUE + "  Макс: " + Float.MAX_VALUE);
+        System.out.println("Double: Розмір: " + Double.BYTES + " байт  Мін: " + Double.MIN_VALUE + "  Макс: " + Double.MAX_VALUE);
+
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Введіть ціле число: ");
+        String inputInt = scanner.nextLine();
+        int parsedInt = Integer.parseInt(inputInt);
+        System.out.println("Перетворено в int: " + parsedInt);
+
+        System.out.print("Введіть дробове число: ");
+        String inputDouble = scanner.nextLine();
+        double parsedDouble = Double.parseDouble(inputDouble);
+        System.out.println("Перетворено в double: " + parsedDouble);
+
+        System.out.print("Введіть true або false: ");
+        String inputBoolean = scanner.nextLine();
+        boolean parsedBoolean = Boolean.parseBoolean(inputBoolean);
+        System.out.println("Перетворено в boolean: " + parsedBoolean);
+
+        scanner.close();
+    }
+}
